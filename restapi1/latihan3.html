@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- <script src="latihan3.js"></script> -->
+    <!-- <script>
+        let mahasiswa = {
+            nama: "Budi",
+            umur: 20,
+            email: "budi@budi.com",
+        }
+
+        console.log(mahasiswa);
+    </script> -->
+
+    <!-- vanilaJS -->
+    <!-- <script>
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                let mahasiswa = JSON.parse(this.responseText);
+                console.log(mahasiswa);
+            }
+        }
+        xhr.open('GET', 'data.json', true);
+        xhr.send();
+    </script> -->
+
+    <!-- JQuery -->
+    <script>
+        $.getJSON('data.json', function (data) {
+            console.log(data);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+    "nama": "Dicky",
+    "pekerjaan": "Programmer",
+    "umur": 20,
+    "kota": "Bekasi",
+    "hobby": ["Coding", "Tidur"],
+    "is_married": false,
+    "friends": [
+        {
+            "name": "Dicky",
+            "pekerjaan": "Programmer",
+            "umur": 20,
+            "kota": "Bekasi",
+            "hobby": ["Coding", "Tidur"],
+            "is_married": false
+        },
+        {
+            "name": "Malik",
+            "pekerjaan": "Programmer",
+            "umur": 10,
+            "kota": "Bekasi",
+            "hobby": ["Coding", "Tidur"],
+            "is_married": false
+        }
+    ]
+}
