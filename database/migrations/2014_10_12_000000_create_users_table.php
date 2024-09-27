@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('firstname', 100);
             $table->string('lastname', 100)->nullable();
-            $table->timestamps();
+            $table->timestamps('created_at')->useCurrent();
             $table->softDeletes();
         });
     }

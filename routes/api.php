@@ -28,6 +28,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('/posts', [PostController::class,'store']);
     Route::post('/posts-updated/{id}', [PostController::class,'ganti']); #->middleware('owner-post');
     Route::delete('posts/{id}',  [PostController::class,'destroy']); #->middleware('owner-post');
+
+    // Route::post('/comment', [CommentController::class, 'store']);
 });
 
 

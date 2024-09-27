@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title', 255);
             $table->text('news_content');
             $table->unsignedBigInteger('author');
-            $table->timestamps();
+            $table->timestamps('created_at')->useCurrent();
             $table->softDeletes();
 
             $table->foreign('author')->references('id')
